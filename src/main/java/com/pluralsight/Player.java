@@ -1,13 +1,12 @@
 package com.pluralsight;
 
-public class Players {
+public class Player {
    //field members
     private String name;
     private Hand hand;
-    private
 
     //constructor
-    public Players(String name) {
+    public Player(String name) {
         this.name = name;
         this.hand = new Hand();
     }
