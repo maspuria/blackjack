@@ -54,7 +54,6 @@ public class Card {
         }
     }
 
-
     public boolean isFaceUp() {
         return isFaceUp;
     }
