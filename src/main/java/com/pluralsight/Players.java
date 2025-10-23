@@ -6,9 +6,9 @@ public class Players {
     private Hand hand;
 
     //constructor
-    public Players(String name, Hand hand) {
+    public Players(String name) {
         this.name = name;
-        this.hand = hand;
+        this.hand = new Hand();
     }
     // getters
     public String getName() {
@@ -17,6 +17,14 @@ public class Players {
 
     public Hand getHand() {
         return hand;
+    }
+
+    @Override
+    public String toString() {
+        return "Players {" +
+                "name = '" + name + '\'' +
+                ", hand =" + hand +
+                '}';
     }
 
 }
