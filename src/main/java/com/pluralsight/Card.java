@@ -62,4 +62,12 @@ public class Card {
         isFaceUp = !isFaceUp;
     }
 
+    @Override
+    public String toString() {
+        return "Card {" +
+                "suit = '" + suit + '\'' +
+                ", value = '" + value + '\'' +
+                ", isFaceUp = " + isFaceUp +
+                '}';
+    }
 }
