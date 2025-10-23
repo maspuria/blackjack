@@ -14,23 +14,11 @@ public class Card {
     }
 
     public String getSuit() {
-        // only return the suit if the card is face up
-        if (isFaceUp) {
-            return suit;
-        } else {
-            return "#";
-        }
+        return suit;
     }
 
     public String getValue() {
-        // only return the value if the card is face up
-        if (isFaceUp) {
-            // this is the string value of the card
-            // i.e. A, K, Q, J, 10, 9 ...
-            return value;
-        } else {
-            return "#";
-        }
+        return value;
     }
 
     public int getPointValue() {
@@ -64,10 +52,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card {" +
-                "suit = '" + suit + '\'' +
-                ", value = '" + value + '\'' +
-                ", isFaceUp = " + isFaceUp +
-                '}';
+        return value + " of " + suit;
     }
 }
