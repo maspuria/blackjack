@@ -8,9 +8,10 @@ public class BlackJackApp {
         Hand hand1 = new Hand();
 
         //Player ArrayList
-        ArrayList<Players> player = new ArrayList<>();
+        ArrayList<Player> players = new ArrayList<>();
+        players.add(new Player("Mari"));
 
-        player.
+
 
         // deal 5 cards
         for(int i = 0; i < 5; i++) {
