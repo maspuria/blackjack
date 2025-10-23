@@ -5,7 +5,6 @@ import java.util.Collections;
 
 public class Deck {
     private ArrayList<Card> cards;
-
     public Deck(){
         cards = new ArrayList<>();
         String[] suits = {"Hearts","Spades","Diamonds","Clubs"};
@@ -26,7 +25,7 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
-    public deal(){
+    public Card deal(){
         // deal the top card (if there are any cards left
         if(cards.size() > 0){
             Card card = cards.remove(0);

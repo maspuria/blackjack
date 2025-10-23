@@ -4,6 +4,7 @@ public class Players {
    //field members
     private String name;
     private Hand hand;
+    private
 
     //constructor
     public Players(String name) {
